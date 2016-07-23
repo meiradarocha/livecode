@@ -30,12 +30,15 @@ Use the <colorNames> <property> to check whether a particular color name
 can be used to specify <properties> such as <foregroundColor> and
 <backgroundColor>. 
 
+Each color name returns three comma-separated integers between zero and 255, 
+specifying the level of each of red, green, and blue.
+
 You can use the color names with the foregroundColor, <backgroundColor>,
 <focusColor>, <topColor>, <bottomColor>, <hiliteColor>, <borderColor>,
 <shadowColor>, <selectionHandleColor>, <accentColor>, <backdrop>,
 <brushColor>, and <penColor> <properties>.
 
-References: answer color (command), propertyNames (function),
+Referencees: answer color (command), propertyNames (function),
 functionNames (function), property (glossary), LiveCode (glossary),
 return (glossary), is a (operator), hiliteColor (property),
 shadowColor (property), foregroundColor (property),
@@ -44,6 +47,10 @@ penColor (property), focusColor (property), brushColor (property),
 properties (property), backdrop (property), bottomColor (property),
 backgroundColor (property), accentColor (property), topColor (property),
 linkColor (property), selectionHandleColor (property)
+
+>*Note:* In LC version 8.1, the colors "Gray"&X (where X is a number from 0 to 100),
+> in lines 149 to 249, was changed to correct "R,G,B" values (bug 7344) 
+> and sorted numerically. 
 
 Tags: ui
 
